@@ -46,6 +46,7 @@ watch(weights, (newValue) => {
                 .sort((a,b)=>a.date - b.date)
                 .map(w => w.weight)
                 .slice(-7);
+                
     weightChart.value.update();
     return;
 
